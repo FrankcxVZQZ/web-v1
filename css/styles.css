@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #2c3e50;
+  background-color:  #264f78;
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -111,7 +111,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #2c3e50;
+  background-color:  #264f78;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -195,4 +195,62 @@ footer {
 
 .slider-container:hover img {
     animation-play-state: paused;
+}
+
+/*  BlogG/Noticias  */
+
+.blog-section {
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.blog-section h2 {
+  color: #264f78;
+  text-align: left;
+  margin-bottom: 20px;
+  border-left: 5px solid #2980b9;
+  padding-left: 10px;
+}
+
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-section .card {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.blog-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-section .card img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.contacto-contenido-texto .texto-centrado {
+    text-align: center;
+}
+
+
+
+.formulario-centrado {
+    max-width: 400px; 
+    margin: 20px auto; 
+    text-align: left; 
+}
+
+
+.contacto-seccion .intro-texto {
+    max-width: 1000px; 
+    margin: 0 auto;
 }
