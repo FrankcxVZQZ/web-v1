@@ -41,14 +41,14 @@ nav a.active {
   background-color: #34495e;
 }
 
-/* --- Contenedor principal --- */
+/* Contenedor principal  */
 .container {
   max-width: 1100px;
   margin: 30px auto;
   padding: 0 20px;
 }
 
-/* --- Tarjeta principal --- */
+/* Tarjeta principal */
 .card {
   background: #fff;
   border-radius: 8px;

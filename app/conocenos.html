@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Captura de Usuarios</title>
+  <link rel="shortcut icon" href="img/museo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/museo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+<header>
+  <h1>Blog y Noticias</h1>
+            <nav>
+                <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../museos/lista-museos.html">Museos</a></li>
+                <li><a href="../temas/index.temas.html">Explora por Tema</a></li>
+                <li><a href="../visita/consejos.html">Planifica tu Visita</a></li>
+                <li><a href="../blog/articulos.html">Blog</a></li>
+                <li><a href="../app/conocenos.html">Cononce mas</a></li>
+                <li><a href="../blog/nosotros.html">Acerca de</a></li>
+                </ul>
+            </nav>
+</header>
+
+
+<div class="page-content-container">
+
+  <div class="intro">
+      <div class="intro-texto">
+          <h2>Captura de datos</h2>
+          <p>Registra usuarios con su nombre, edad, correo, celular y nacionalidad.  
+             Luego puedes ordenarlos por edad, por nacionalidad o alfabéticamente por apellidos.</p>
+      </div>
+
+      <div class="intro-imagen">
+          <img src="https://picsum.photos/320/220" alt="Imagen ilustrativa">
+      </div>
+  </div>
+
+  <!-- Formulario -->
+  <div class="formulario-centrado card">
+      <h3>Nuevo Usuario</h3>
+      <form id="formUsuario">
+
+          <label>Nombre completo:</label>
+          <input type="text" id="nombre" required class="input-form"><br><br>
+
+          <label>Edad:</label>
+          <input type="number" id="edad" required class="input-form"><br><br>
+
+          <label>Correo electrónico:</label>
+          <input type="email" id="correo" required class="input-form"><br><br>
+
+          <label>Celular:</label>
+          <input type="text" id="celular" required class="input-form"><br><br>
+
+          <label>Nacionalidad:</label>
+          <input type="text" id="nacionalidad" required class="input-form"><br><br>
+
+          <button type="submit" class="boton">Guardar usuario</button>
+      </form>
+  </div>
+
+  <hr>
+
+  <!-- Botones -->
+  <div style="text-align:center; margin-bottom:20px;">
+      <button onclick="ordenarPorEdad()" class="boton">Ordenar por edad</button>
+      <button onclick="ordenarPorNacionalidad()" class="boton">Ordenar por nacionalidad</button>
+      <button onclick="ordenarPorApellido()" class="boton">Ordenar por apellido</button>
+  </div>
+
+  <!-- Salida -->
+  <div class="card" style="max-width:600px; margin:0 auto;">
+      <h3>Listado de Usuarios</h3>
+      <pre id="salida"></pre>
+
+      <!-- BOTON DE DESCARGA JSON -->
+      <button onclick="descargarJSON()" class="boton" style="margin-top: 15px;">
+          Descargar JSON
+      </button>
+<!-- BOTÓN DE SUBIR JSON -->
+<label for="inputJSON" class="boton" style="margin-top: 15px; cursor:pointer; display:inline-block;">
+    Subir JSON
+</label>
+
+<input type="file" id="inputJSON" accept=".json" style="display:none;" onchange="cargarJSON()">
+
+
+
+
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Sistema de Captura • Todos los derechos reservados
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>

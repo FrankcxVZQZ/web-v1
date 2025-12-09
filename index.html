@@ -6,58 +6,82 @@
   <title>Los 10 Museos Más Destacados del Mundo</title>
   <link rel="shortcut icon" href="img/museo.png" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
-  
 </head>
+
 <body>
   <header>
-    <h1>Los 10 Museos famosos del Mundo</h1>
+    <h1>Los 10 Museos Famosos del Mundo</h1>
     <nav>
-        <ul>
-          <li><a href=".//index.html">Inicio</a></li>
-          <li><a href="./museos/lista-museos.html">Museos</a></li>
-          <li><a href="./temas/index.temas.html">Explora por Tema</a></li>
-          <li><a href="./visita/consejos.html">Planifica tu Visita</a></li>
-          <li><a href="./blog/articulos.html">Blog</a></li>
-          <li><a href="./blog/nosotros.html">Acerca de</a></li>
-        </ul>
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./museos/lista-museos.html">Museos</a></li>
+        <li><a href="./temas/index.temas.html">Explora por Tema</a></li>
+        <li><a href="./visita/consejos.html">Planifica tu Visita</a></li>
+        <li><a href="./blog/articulos.html">Blog</a></li>
+        <li><a href="./app/conocenos.html">Cononce mas</a></li>
+        <li><a href="./blog/nosotros.html">Acerca de</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
 
-  <section class="intro">
-    <div class="texto">
-      <h2>Bienvenido a tu recorrido por el arte mundial</h2>
-      <p class="small">Explora los 10 museos más importantes del planeta, conoce sus colecciones y planifica tu visita.</p>
-      <a class="boton" href="museos/lista-museos.html">Explorar Museos</a>
+<header class="hero-principal">
+    <img src="img/portada.webp" alt="Museo Louvre" class="hero-img">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-texto">
+      <h1>DESCUBRE LAS <span>NUEVAS EXPOSICIONES</span><br>EN NUESTRO MUSEO</h1>
+      <p>
+          El ser humano nace con un propósito. El mundo avanza gracias a la colaboración
+          de todos. Cada persona aporta algo distinto; diferentes miradas que construyen
+          lo que somos.
+      </p>
+      <a href="./museos/lista-museos.html" class="btn-hero">Explorar Exposiciones</a>
+
+</header>
+
+
+
+    <section class="seccion-museos">
+    <h2 class="titulo-museos">MUSEOS DESTACADOS</h2>
+
+    <div class="museos-grid">
+
+        <!-- Galería Nacional de Londres -->
+        <div class="museo-item">
+            <img src="img/Galería Nacional.jpeg" alt="Galería Nacional de Londres">
+            <h3>Galería Nacional de Londres</h3>
+            <p>Londres, Reino Unido</p>
+            <span onclick="window.location.href='museos/Galeria-Nacional-de-Londres.html'" class="ver-mas">Ver más </span>
+        </div>
+
+        <!-- Museo Nacional de Antropología -->
+        <div class="museo-item">
+            <img src="img/Antropologia.jpg" alt="Museo Nacional de Antropología">
+            <h3>Museo Nacional de Antropología</h3>
+            <p>Ciudad de México, México</p>
+            <span onclick="window.location.href='museos/Museo-Nacional-de-Antropologia.html'" class="ver-mas">Ver más </span>
+        </div>
+
+        <!-- Museo de Orsay -->
+        <div class="museo-item">
+            <img src="img/Orsay.jpg" alt="Museo de Orsay">
+            <h3>Museo de Orsay</h3>
+            <p>París, Francia</p>
+            <span onclick="window.location.href='museos/Orsay.html'" class="ver-mas">Ver más </span>
+        </div>
+
     </div>
-    <div style="width:320px">
-      <img src="img/Louvre.jpeg" alt="Louvre" style="width:100%;border-radius:8px;display:block">
-    </div>
-  </section>
+</section>  
 
-
-</section>
-
-    <div onclick="window.location.href='museos/lista-museos.html'" class="slider-container">
-
-        <img src="img/Antropologia.jpg" alt="Museo Nacional de Antropología">
-        <img src="img/Arte Moderno.jpg" alt="Museo de Arte Moderno">
-        <img src="img/Britanico.jpg" alt="Museo Británico">
-        <img src="img/Galería Nacional.jpeg" alt="Galería Nacional">
-        <img src="img/Hermitage.jpeg" alt="Museo Hermitage">
-        <img src="img/Louvre.jpeg" alt="Museo del Louvre">
-        <img src="img/Metropolitano.jpg" alt="Museo Metropolitano de Arte">
-        <img src="img/Orsay.jpg" alt="Museo de Orsay">
-        <img src="img/Prado.jpg" alt="Museo del Prado">
-        <img src="img/Vaticanos.jpg" alt="Museos Vaticanos">
-  </div>
-      <body>
 
   </main>
 
   <footer>
-    <p>Evaluacion 2do departamental</p>
+    <p>Evaluación - 2do Departamental</p>
   </footer>
+
 </body>
 </html>
